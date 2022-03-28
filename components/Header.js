@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 function NavLink({ to, children }) {
-	return <a href={to} className={`px-4 py-2 hover:rounded-md hover:bg-gray-200 hover:duration-300`}>
+	return <a href={to} className={`px-4 uppercase py-2 hover:rounded-md hover:bg-gray-200 hover:duration-300`}>
 		{children}
 	</a>
 }
@@ -12,7 +12,7 @@ function MobileNav({ open, setOpen }) {
 			<div className="flex items-center justify-center filter drop-shadow-md bg-white h-20"> {/*logo container*/}
 				<a className="text-2xl font-semibold custom-font uppercase" href="/">Vat{">"}</a>
 			</div>
-			<div className="flex flex-col ml-4">
+			<div className="flex flex-col ml-4 uppercase">
 				<a className="text-xl font-medium my-4" href="#ico" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}>
 					What is ICO
 				</a>
