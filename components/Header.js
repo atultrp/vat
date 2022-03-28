@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 function NavLink({ to, children }) {
-	return <a href={to} className={`mx-4 hover:scale-125 hover:duration-300`}>
+	return <a href={to} className={`px-4 py-2 hover:rounded-md hover:bg-gray-200 hover:duration-300`}>
 		{children}
 	</a>
 }
